@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        http://www.springframework.org/schema/context/spring-context.xsd">
+        
+        <context:annotation-config />
+    	     	
+    	  <!-- <bean class="com.nisum.javabrains.Triangle" id="triangle" > 
+    	   	<property name="a" ref="a"></property>
+    	   	<property name="b" ref="b"></property>
+    		<property name="c" ref="c"></property>
+     	</bean> -->
+    
+    
+    <bean id="a" class="com.nisum.javabrains.Point">
+    <property name="x" value="69"></property>
+    <property name="y" value="69"></property>
+    </bean>
+
+
+    <bean id="b" class="com.nisum.javabrains.Point">
+    <property name="x" value="10"></property>
+    <property name="y" value="10"></property>
+    </bean>
+
+
+    <bean id="c" class="com.nisum.javabrains.Point">
+    <property name="x" value="20"></property>
+    <property name="y" value="20"></property>
+    </bean>
+    
+    
+    <!-- <bean id="shape" class="com.nisum.javabrains.Circle">
+    	<property name="center" ref="a"></property>
+    	</bean> -->
+    	
+    	<!-- <bean class="org.springframework.beans.factory.annotation.RequiredAnnotationBeanPostProcessor"></bean> -->
+    
+    <!-- <bean class="com.nisum.javabrains.MyBeanFactoryPostProcessor"></bean> -->
+
+<!-- <bean class="com.nisum.javabrains.DisplayBeanNamesUsingBeanPostProcessor"></bean> -->
+
+<!-- <bean 
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+
+		<property name="location">
+			<value>points.properties</value>
+		</property>
+	</bean> -->
+
+</beans>
